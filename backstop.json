@@ -1,0 +1,36 @@
+{
+  "id": "backstop_wp",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    }
+  ],
+  "onBeforeScript": "casper/onBefore.js",
+  "onReadyScript": "casper/onReady.js",
+  "scenarios": [
+    {
+      "label": "WordPress",
+      "url": "http://127.0.0.1:8080/"
+    },
+    {
+      "label": "WordPress Dashboard",
+      "url": "http://127.0.0.1:8080/wp-admin"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser", "cli"],
+  "engine": "",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
