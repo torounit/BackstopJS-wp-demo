@@ -17,7 +17,7 @@
       "label": "WordPress",
       "url": "http://127.0.0.1:8080/",
       "selectors": [
-        "body"
+        "#masthead"
       ]
     },
     {
@@ -26,8 +26,8 @@
       "onBeforeScript": "casper/onBefore.js",
       "onReadyScript": "casper/onReady.js",
       "selectors": [
-        "body",
-        "#wpadminbar"
+        "#wp-admin-bar-site-name",
+        "#wpbody-content h1"
       ]
     }
   ],
@@ -38,7 +38,7 @@
     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
   },
-  "report": ["browser", "cli"],
+  "report": ["browser", "CLI"],
   "engine": "",
   "engineFlags": [],
   "asyncCaptureLimit": 5,
