@@ -1,8 +1,7 @@
 {
-  "name": "backstopjs-wp",
+  "name": "backstopjs-wp-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "reference": "gulp reference",
     "test": "gulp test",
