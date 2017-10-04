@@ -5,18 +5,30 @@
       "label": "phone",
       "width": 320,
       "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
     }
   ],
-  "onBeforeScript": "casper/onBefore.js",
-  "onReadyScript": "casper/onReady.js",
   "scenarios": [
     {
       "label": "WordPress",
-      "url": "http://127.0.0.1:8080/"
+      "url": "http://127.0.0.1:8080/",
+      "selectors": [
+        "body"
+      ]
     },
     {
       "label": "WordPress Dashboard",
-      "url": "http://127.0.0.1:8080/wp-admin"
+      "url": "http://127.0.0.1:8080/wp-admin",
+      "onBeforeScript": "casper/onBefore.js",
+      "onReadyScript": "casper/onReady.js",
+      "selectors": [
+        "body",
+        "#wpadminbar"
+      ]
     }
   ],
   "paths": {
