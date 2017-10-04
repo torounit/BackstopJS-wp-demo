@@ -7,7 +7,7 @@
     "test": "gulp test",
     "init": "backstop init",
     "backstop": "backstop",
-    "install-wp": "bash ./bin/install-wp.sh backstop_wp_demo root '' localhost"
+    "install-wp": "bash ./bin/install-wp.sh backstop_wp_demo root ''"
   },
   "author": "",
   "license": "ISC",

@@ -4,7 +4,7 @@ set -ex;
 
 WP_CLI=$(cd $(dirname $0);cd ../;pwd)/vendor/bin/wp
 
-DB_NAME=${1-wpdev}
+DB_NAME=$1
 DB_USER=${2-root}
 DB_PASS=$3
 PORT=8080
