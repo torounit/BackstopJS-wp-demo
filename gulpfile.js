@@ -15,6 +15,7 @@ const run = (command) => {
             server.closeServer();
         }).catch(() => {
             server.closeServer();
+            process.exit(1)
         });;
     });
 };
