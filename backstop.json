@@ -16,14 +16,14 @@
   "scenarios": [
     {
       "label": "WordPress",
-      "url": "http://127.0.0.1:8080/",
+      "url": "http://127.0.0.1:18080/",
       "selectors": [
         "#masthead"
       ]
     },
     {
       "label": "WordPress Dashboard",
-      "url": "http://127.0.0.1:8080/wp-admin",
+      "url": "http://127.0.0.1:18080/wp-admin",
       "onBeforeScript": "casper/onBefore.js",
       "selectors": [
         "#wp-admin-bar-site-name",

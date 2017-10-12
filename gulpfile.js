@@ -7,7 +7,7 @@ let server = new connect();
 const run = (command) => {
     return server.server({
         host: '127.0.0.1',
-        port: '8080',
+        port: '18080',
         base: './www',
         router: './vendor/wp-cli/server-command/router.php'
     }, () => {
