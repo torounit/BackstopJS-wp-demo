@@ -7,19 +7,19 @@ WP_CLI=$(cd $(dirname $0);cd ../;pwd)/vendor/bin/wp
 DB_NAME=$1
 DB_USER=${2-root}
 DB_PASS=$3
-PORT=18080
+PORT=20080
 WP_PATH=$(pwd)/www
 WP_TITLE='Welcome to the WordPress'
 WP_DESC='Hello World!'
 
-if [ -e "$WP_PATH/wp-config.php" ]; then
-    exit 0
-fi
 
 echo "path: www" > $(pwd)/wp-cli.yml
 
 $WP_CLI core download --path=$WP_PATH --locale=en_US --version=trunk --force
 
+
+
+if [ ! -e "$WP_PATH/wp-config.php" ]; then
 if [ $DB_PASS ]; then
 $WP_CLI config create \
 --skip-check \
@@ -46,6 +46,8 @@ define( 'JETPACK_DEV_DEBUG', true );
 define( 'WP_DEBUG', true );
 PHP
 fi
+fi
+
 
 $WP_CLI db create || $WP_CLI db reset --yes
 
