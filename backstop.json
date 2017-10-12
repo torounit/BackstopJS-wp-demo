@@ -38,7 +38,7 @@
     "html_report": "backstop_data/html_report",
     "ci_report": "backstop_data/ci_report"
   },
-  "report": ["cli"],
+  "report": ["browser", "cli"],
   "engine": "",
   "engineFlags": [],
   "asyncCaptureLimit": 5,

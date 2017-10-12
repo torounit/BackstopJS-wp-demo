@@ -1,6 +1,11 @@
 language: php
 php:
 - '5.4'
+addons:
+  chrome: stable
+  apt:
+    packages:
+    - fonts-noto-hinted
 cache:
   directories:
   - vendor
