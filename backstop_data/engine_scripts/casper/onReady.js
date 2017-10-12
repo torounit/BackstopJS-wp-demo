@@ -3,6 +3,7 @@ module.exports = function(casper, scenario, vp) {
   require('./clickAndHoverHelper')(casper, scenario);
   // add more helpers here...
   casper.evaluate(function () {
-	return document.querySelector('body').style.fontFamily = '"Noto Sans", "Noto Sans CJK JP", sans-serif';
+    console.log( 'set fonts');
+    return document.querySelector('body').style.fontFamily = '"Noto Sans", "Noto Sans CJK JP", sans-serif';
   });
 };

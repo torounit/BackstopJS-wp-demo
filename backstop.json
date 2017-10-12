@@ -12,6 +12,7 @@
       "height": 768
     }
   ],
+  "onReadyScript": "casper/onReady.js",
   "scenarios": [
     {
       "label": "WordPress",
@@ -24,7 +25,6 @@
       "label": "WordPress Dashboard",
       "url": "http://127.0.0.1:8080/wp-admin",
       "onBeforeScript": "casper/onBefore.js",
-      "onReadyScript": "casper/onReady.js",
       "selectors": [
         "#wp-admin-bar-site-name",
         "#wpbody-content h1"
